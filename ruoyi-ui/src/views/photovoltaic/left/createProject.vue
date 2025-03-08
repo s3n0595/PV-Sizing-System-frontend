@@ -191,11 +191,7 @@ export default {
   box-sizing: border-box;
 }
 
-.form-content {
-  flex: 1; /* 占据剩余空间 */
-  overflow-y: auto; /* 允许内容滚动 */
-  padding-bottom: 20px; /* 为底部按钮留出空间 */
-}
+
 
 h1 {
   text-align: center;
@@ -236,7 +232,7 @@ button:hover {
 
 .form-content {
   flex: 1; /* 占据剩余空间 */
-  overflow: hidden;
+  //overflow: hidden;
   overflow-y: auto; /* 允许内容滚动 */
   padding-bottom: 60px; /* 为底部按钮留出空间 */
 }
@@ -271,7 +267,7 @@ button:hover {
   flex-shrink: 0; /* 防止按钮区域被压缩 */
   padding: 20px;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 30%;
 }
 
 .submit-button-container button {

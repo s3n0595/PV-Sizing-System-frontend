@@ -28,7 +28,7 @@ export default {
 /* 容器样式 */
 .container {
   display: flex;
-  height: 100vh; /* 占满整个视口高度 */
+  height: 90vh; /* 占满整个视口高度 */
 }
 
 /* 左侧样式 */
