@@ -30,7 +30,7 @@ export default {
         this.initMap();
       } else {
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZw7RiLpZK1kWhl_wtbC-5Q7KUeESuHA`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDGIMePJUFBn7mamyLdWlCO5Od9wm1g54I`;
         script.async = true;
         script.defer = true;
         script.onload = () => this.initMap();
