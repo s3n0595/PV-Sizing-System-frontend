@@ -53,7 +53,7 @@
         <!--        作者-->
         <div class="form-group">
           <label for="coordinates" class="no-bold">Author</label>
-          <el-input v-model="formData.Author" placeholder="Enter Author" clearable :style="{width: '100%'}">
+          <el-input v-model="user.userName" placeholder="Enter Author" clearable :style="{width: '100%'}">
           </el-input>
         </div>
 
@@ -132,10 +132,16 @@
 </template>
 
 <script>
+import {getUserProfile} from "@/api/system/user";
+
 export default {
+  created() {
+    this.getUser();
+  },
   data() {
     return {
       activeTab: 'address', // 默认激活的 Tab
+      user: {},
       formData: {
         projectName: 'New project',
         customerName: '',
@@ -176,6 +182,12 @@ export default {
       // console.log('Form submitted:', this.formData);
       // alert('Form submitted successfully!');
     },
+    getUser() {
+      getUserProfile().then(response => {
+        this.user = response.data;
+        console.log(this.user)
+      });
+    }
   },
 };
 </script>

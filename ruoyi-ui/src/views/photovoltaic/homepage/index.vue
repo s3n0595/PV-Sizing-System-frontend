@@ -45,7 +45,7 @@ export default {
 .right {
   width: 75%;
   background-color: #e0e0e0;
-  padding: 20px;
+  padding: 2px;
   box-sizing: border-box;
 }
 </style>
