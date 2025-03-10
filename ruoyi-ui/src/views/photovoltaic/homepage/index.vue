@@ -8,18 +8,20 @@
 
     <!-- 右侧内容 -->
     <div class="right">
-      <h2>右侧栏</h2>
-      <p>这里是右侧内容，占 80%。</p>
+    <!--  引入googleMap组件-->
+      <googleMap />
     </div>
   </div>
 </template>
 
 <script>
 import createProject from '../left/createProject.vue'; // 引入 创建项目组件
+import googleMap from "@/views/photovoltaic/right/googleMap.vue"; //引入  谷歌地图组建
 export default {
   name: 'Layout',
   components: {
     createProject, // 注册 createProject 组件
+    googleMap, //注册 谷歌地图组建
   },
 };
 </script>
