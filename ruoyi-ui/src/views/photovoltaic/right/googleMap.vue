@@ -7,15 +7,8 @@
 </template>
 
 <script>
-
-
-import config from '@/config';
-
 export default {
   name: "GoogleMap",
-  components: {
-    config, // 注册 createProject 组件
-  },
   data() {
     return {
       map: null,
@@ -37,7 +30,7 @@ export default {
         this.initMap();
       } else {
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=`+config.gooleKey;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZw7RiLpZK1kWhl_wtbC-5Q7KUeESuHA`;
         script.async = true;
         script.defer = true;
         script.onload = () => this.initMap();
